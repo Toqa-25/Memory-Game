@@ -164,23 +164,27 @@ function next() {
       thirdLeader = document.querySelector(".third-leader");
  function leaders(){
     if (winUsers && leadersWin[0].score > 0) {
-        //leader one
+      //leader one
       firstLeader.innerHTML = `1 - ${leadersWin[0].Name} <i class="fas fa-trophy"></i> `;
     } else {
       document.querySelector(".leaders").style.display = "none";
     }
     if (winUsers.length >= 2 && leadersWin[1].score > 0) {
-        seconedLeader.innerHTML = `2 - ${leadersWin[1].Name} `;
+      seconedLeader.innerHTML = `2 - ${leadersWin[1].Name} `;
     } else {
       seconedLeader.style.display = "none";
     }
-    if (winUsers.length >= 4 && leadersWin[2].score > 0) {
-        thirdLeader.innerHTML = `3 - ${leadersWin[2].Name} `;
-    } else {
-        thirdLeader.style.display = "none";
-    }   
-}
-if (winUsers ) {
+       if (winUsers.length >= 4 && leadersWin[2].score > 0) {
+         thirdLeader.innerHTML = `3 - ${leadersWin[2].Name} `;
+       } else {
+         thirdLeader.style.display = "none";
+       }   
+ }
+
+// console.log(`${leaders[0].Name} => ${leaders[0].score} point`);
+
+
+
 let countNumer = document.getElementById("count-number"),
 project = setInterval(projectDone , 5),
 count1 =1
@@ -192,19 +196,3 @@ function projectDone() {
         clearInterval(project);
     }
 }
-}
-
-
-
-
-// let countNumer = document.getElementById("count-number"),
-// project = setInterval(projectDone , 5),
-// count1 =1
-
-// function projectDone() {
-//     count1++;
-//     countNumer.innerHTML = count1
-//     if (count1 == winUsers.length) {
-//         clearInterval(project);
-//     }
-// }
