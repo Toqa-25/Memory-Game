@@ -180,7 +180,7 @@ function next() {
         thirdLeader.style.display = "none";
     }   
 }
-if (winUsers  && winUsers.length > 1) {
+if (winUsers  ) {
 let countNumer = document.getElementById("count-number"),
 project = setInterval(projectDone , 5),
 count1 =1
