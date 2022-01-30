@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css style -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- google fonts -->
+    <!-- <link rel="stylesheet" href="http://127.0.0.1:5500/css/all.min.css?_cacheOverride=1643564282013"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&amp;display=swap" rel="stylesheet">
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <!-- info section -->
+        <div class="counter">
+        <p id="count-number">600</p>
+    </div>
+    <section id="all">
+      <div class="data">
+          <h3 class="data-name">Enter Your Name</h3>
+          <input type="text" name="" id="" /> 
+          <button id="start">Start</button>
+        </div>
+        <div class="game" style="display: none">
+            <!-- player info  -->
+        <div class="info">
+          <div class="container">
+            <div class="info-content">
+              <div class="info-name info-child">
+                <span class="info-name-key" id="name-key">Name :</span>
+                <span class="info-name-value" id="name-value"></span>
+              </div>
+              <div class="info-level info-child">
+                <span class="level">Level :</span>
+                <span class="level-value" id="level-value"></span>
+              </div>
+              <div class="tries info-child">
+                <span class="tries-key">False :</span>
+                <span class="tries-value" id="tries-value"></span>
+              </div>
+              <div class="true-tries info-child">
+                <span class="true-tries-key">Score :</span>
+                <span class="true-tries-value" id="true-tries-value"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+            <!-- block game -->
+        <div class="block-game">
+            <div class="container">
+                <div class="block-game-content"></div>
+            </div>
+        </div>
+        <!-- leaders  -->
+         <div class="leaders">
+        <h3 class="leaders-head">top leaders</h3>
+        <ul class="leaders-list">
+          <li class="first-leader"></li>
+          <li class="seconed-leader"></li>
+          <li class="third-leader"></li>
+        </ul>
+        </div>
+
+      </div>
+     
+    </section>
+    <div class="bottom-group">
+             <p>made with <i class="fas fa-heart"></i> by <a class="developer link-none" href="https://toqa-25.github.io/portfolio/">toqa</a></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+ 
